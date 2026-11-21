@@ -1,0 +1,163 @@
+body
+{
+	background-image: url("Zdjecia/tlo.png");
+	font-family: "Merriweather", serif;
+	margin: 0px;
+}
+
+@media (orientation: portrait)
+{
+	#nav
+	{
+		flex-direction: column;
+	}
+	
+	#gallery
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gallery img
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 715px)
+{
+	#nav
+	{
+		flex-direction: column;
+	}
+	
+	#gallery
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gallery img
+    {
+        width: 90%;
+    }
+}
+
+.all
+{
+	background-color: #efefef;
+	max-width: 2000px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 20px;
+	color: #101010;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.bt
+{
+	display: block;
+	color: #101010;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	border-bottom: 2px dotted #dfdfdf;
+	padding-bottom: 15px;
+}
+
+nav a.active 
+{
+	background-color: #000000 !important;
+	transform: translateY(-0px) !important;
+	font-weight: 700;
+}
+
+#title
+{
+	background-color: #202020;
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 900;
+	margin-top: 10px;
+}
+
+#footer
+{
+	background-color: #000000;
+	color: #ffffff;
+	display: flex;
+	align-content: row;
+	justify-content: center;
+	gap: 10px;
+	font-size: 15px;
+}
+
+#footer a
+{
+	color: #ffffff;
+}
+
+#nav
+{
+	background-color: #101010;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-around;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	gap: 5px;
+}
+
+#nav a
+{
+	color: #ffffff;
+	background-color: #101010;
+	font-size: 25px;
+	text-decoration: none;
+	padding: 20px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#nav a:hover
+{
+	background-color: #303030;
+	transition: 0.3s;
+	transform: translateY(-3px);
+}
+
+#images
+{
+	margin-bottom: 0px;
+}
+
+#gallery
+{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+a
+{
+	color: #505050;
+}
+
+a:hover
+{
+	color: #000000;
+}
+
+p
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
